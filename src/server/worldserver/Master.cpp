@@ -141,8 +141,8 @@ int Master::Run()
     TC_LOG_INFO("server.worldserver", "    _/    _/  _/  _/_/  _/  _/    _/        _/    _/  _/    _/  _/         ");
     TC_LOG_INFO("server.worldserver", "   _/_/_/_/  _/_/      _/_/      _/        _/    _/  _/_/_/    _/_/_/      ");
     TC_LOG_INFO("server.worldserver", "  _/    _/  _/        _/  _/    _/        _/    _/  _/    _/  _/           ");
-    TC_LOG_INFO("server.worldserver", " _/    _/  _/        _/    _/    _/_/_/    _/_/    _/    _/  _/_/_/_/   NG ");
-    TC_LOG_INFO("server.worldserver", " Arkania Community (c) 2018!                         <http://arkania.net/> ");
+    TC_LOG_INFO("server.worldserver", " _/    _/  _/        _/    _/    _/_/_/    _/_/    _/    _/  _/_/_/_/   434 ");
+    TC_LOG_INFO("server.worldserver", " Arkania Community (c) 2019!                         <http://arkania.net/> ");
     TC_LOG_INFO("server.worldserver", " ");
     TC_LOG_INFO("server.worldserver", "<Ctrl-C> to stop.\n");
 

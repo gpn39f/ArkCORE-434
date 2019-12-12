@@ -30,7 +30,7 @@ char const* GitRevision::GetDate()
 
 char const* GitRevision::GetBranch()
 {
-    return ""; // _BRANCH;
+    return "434"; // _BRANCH;
 }
 
 char const* GitRevision::GetCMakeCommand()
@@ -69,11 +69,11 @@ char const* GitRevision::GetFullDatabase()
 }
 
 #if PLATFORM == PLATFORM_WINDOWS
-# ifdef _WIN64
+#  ifdef _WIN64
 #    define TRINITY_PLATFORM_STR "Win64"    
-# else
+#  else
 #    define TRINITY_PLATFORM_STR "Win32"
-# endif
+#  endif
 #else
 #  define TRINITY_PLATFORM_STR "Unix"
 #endif
@@ -86,7 +86,7 @@ char const* GitRevision::GetFullDatabase()
 
 char const* GitRevision::GetFullVersion()
 {
-  return "ArkCore4-NG rev. " VER_PRODUCTVERSION_STR
+  return "ArkCore-434 rev. " VER_PRODUCTVERSION_STR
     " (" TRINITY_PLATFORM_STR ", " _BUILD_DIRECTIVE ", " TRINITY_LINKAGE_TYPE_STR ")";
 }
 
