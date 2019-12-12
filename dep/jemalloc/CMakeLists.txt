@@ -95,25 +95,9 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux" AND NOT NOJEM)
       -D_GNU_SOURCE
       -D_REENTRAN)
 
-  target_link_libraries(jemalloc
-    PRIVATE
-      trinity-dependency-interface
-    PUBLIC
-      threads
-      valgrind
-	  ${CMAKE_DL_LIBS})
-
   set_target_properties(jemalloc
       PROPERTIES
         FOLDER
           "dep")
-
-else()
-  # Provide a dummy target for jemalloc which is used when jemalloc
-  # is disabled or not supported.
-  add_library(jemalloc INTERFACE)
-  target_link_libraries(jemalloc
-    INTERFACE
-      valgrind)
 
 endif()
