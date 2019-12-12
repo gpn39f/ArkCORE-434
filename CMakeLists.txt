@@ -10,7 +10,7 @@
 
 # Set projectname (must be done AFTER setting configurationtypes)
 
-project(ArkCORE4-NG)
+project(ArkCORE-434)
 
 # CMake policies (can not be handled elsewhere)
 cmake_minimum_required(VERSION 3.9.1)

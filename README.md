@@ -1,4 +1,4 @@
-#![logo](https://github.com/Arkania/ArkCORE-NG/blob/master/logo.png) ArkCORE NG
+#![logo](https://github.com/Arkania/ArkCORE-NG/blob/master/logo.png) ArkCORE-434
 
 ## Introduction
 
@@ -12,7 +12,7 @@ mechanics and functionality.
 It is completely open source; community involvement is highly encouraged.
 
 If you wish to contribute ideas or code please visit our site linked below or
-make pull requests to our [Github repository](https://github.com/Arkania/ArkCORE4).
+make pull requests to our [Github repository](https://github.com/gpn39f/ArkCORE-434).
 
 For further information on the ArkCORE project, please visit our project
 website at [arkania.net](http://www.arkania.net).
@@ -40,7 +40,7 @@ Detailed installation guides are available in the wiki for
 
 ## Reporting issues
 
-Issues can be reported via the [Github issue tracker](https://github.com/Arkania/ArkCORE4).
+Issues can be reported via the [Github issue tracker](https://github.com/gpn39f/ArkCORE-434).
 
 Please take the time to review existing issues before submitting your own to
 prevent duplicates.
@@ -53,7 +53,7 @@ reports are wasteful and are subject to deletion.
 ## Submitting fixes
 
 Fixes are submitted as pull requests via Github. For more information on how to
-properly submit a pull request, read the [how-to: maintain a remote fork](http://www.arkania.net/).
+properly submit a pull request, read the [how-to: maintain a remote fork](http://gpnb39f.spdns.de/forum1).
 
 
 ## Copyright
@@ -72,7 +72,7 @@ Read file [THANKS](THANKS)
 
 [Forum](http://gpn39f.spdns.de/forum1/)
 
-[Wiki](http://gpn39f.spdns.de/wiki2/)
+[Wiki](https://github.com/gpn39f/ArkCORE-434/wiki/)
 
 [Google Drive Monthly Snapshot](https://drive.google.com/drive/folders/0B8q0yc6MkL0naTdpN2xiT2s1bTg)
 
