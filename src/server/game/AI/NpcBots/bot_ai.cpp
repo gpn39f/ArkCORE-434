@@ -3776,8 +3776,15 @@ bool bot_minion_ai::OnGossipSelect(Player* player, Creature* creature, uint32 se
         }
         case 6104: //equips change s4a: reset equipment
         {
-            if (ResetEquipment(action - (GOSSIP_ACTION_INFO_DEF + 1)))
-                me->MonsterSay(RAND<char*>("Fine", "Very well", "Alright", "Yeah"), LANG_UNIVERSAL, player);
+            if (ResetEquipment(action - (GOSSIP_ACTION_INFO_DEF + 1))) {
+                const char* randomWords[4] = {
+                    "Fine",
+                    "Very well",
+                    "Alright",
+                    "Yeah"
+                };
+                me->MonsterSay(randomWords[urand(0,3)], LANG_UNIVERSAL, player);
+            }
             break;
         }
         //equips change s4b: Equip item
@@ -3801,8 +3808,17 @@ bool bot_minion_ai::OnGossipSelect(Player* player, Creature* creature, uint32 se
         case 6122: //18 - 1 neck
         //6105-6150 for items
         {
-            if (Equip(action - GOSSIP_ACTION_INFO_DEF, sender - 6105))
-                me->MonsterSay(RAND<char*>("Fine", "Very well", "Alright", "Yeah", "Good", "Okay"), LANG_UNIVERSAL, player);
+            if (Equip(action - GOSSIP_ACTION_INFO_DEF, sender - 6105)) {
+                const char* randomWords[6] = {
+                    "Fine",
+                    "Very well",
+                    "Alright",
+                    "Yeah",
+                    "Good",
+                    "Okay"
+                };
+                me->MonsterSay(randomWords[urand(0,5)], LANG_UNIVERSAL, player);
+            }
             break;
         }
         default:
