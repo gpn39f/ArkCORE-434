@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: ArkCORE-434 issue template
+about: Describe unwanted behavior
 title: ''
 labels: ''
 assignees: ''
