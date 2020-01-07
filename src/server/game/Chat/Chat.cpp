@@ -520,7 +520,7 @@ bool ChatHandler::SetDataForCommandInTable(ChatCommand* table, char const* text,
             TC_LOG_INFO("misc", "Table `command` overwrite for command '%s' default permission (%u) by %u", fullcommand.c_str(), table[i].Permission, permission);
 
         table[i].Permission = permission;
-        table[i].Help          = help;
+ //       table[i].Help          = help;
         return true;
     }
 

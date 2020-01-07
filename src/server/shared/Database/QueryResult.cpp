@@ -50,10 +50,10 @@ m_length(NULL)
     }
 
     m_rBind = new MYSQL_BIND[m_fieldCount];
-    m_isNull = new my_bool[m_fieldCount];
+    m_isNull = new bool[m_fieldCount];
     m_length = new unsigned long[m_fieldCount];
 
-    memset(m_isNull, 0, sizeof(my_bool) * m_fieldCount);
+    memset(m_isNull, 0, sizeof(bool) * m_fieldCount);
     memset(m_rBind, 0, sizeof(MYSQL_BIND) * m_fieldCount);
     memset(m_length, 0, sizeof(unsigned long) * m_fieldCount);
 
@@ -79,7 +79,16 @@ m_length(NULL)
         memset(m_rBind[i].buffer, 0, size);
         m_rBind[i].buffer_length = size;
         m_rBind[i].length = &m_length[i];
+        
+        // linux deny a direct copy from a c to c++ value.. 
+        // so as workaround i split it into two steps..
+#ifdef _WIN32
         m_rBind[i].is_null = &m_isNull[i];
+#else
+        char c_char = m_isNull[i];
+        m_rBind[i].is_null = &c_char;
+#endif
+
         m_rBind[i].error = nullptr;
         m_rBind[i].is_unsigned = field->flags & UNSIGNED_FLAG;
 

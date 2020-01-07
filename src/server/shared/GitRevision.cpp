@@ -87,7 +87,7 @@ char const* GitRevision::GetFullDatabase()
 char const* GitRevision::GetFullVersion()
 {
   return "ArkCore-434 rev. " VER_PRODUCTVERSION_STR
-    " (" TRINITY_PLATFORM_STR ", " _BUILD_DIRECTIVE ", " TRINITY_LINKAGE_TYPE_STR ")";
+    " (" TRINITY_PLATFORM_STR ", " ", " TRINITY_LINKAGE_TYPE_STR ")"; // _BUILD_DIRECTIVE
 }
 
 char const* GitRevision::GetCompanyNameStr()
