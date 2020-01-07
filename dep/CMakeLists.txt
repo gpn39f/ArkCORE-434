@@ -22,15 +22,12 @@ endif()
 
 if(CMAKE_SYSTEM_NAME MATCHES "Windows")
   add_subdirectory(acelite)
-  if(USE_MYSQL_SOURCES)
-      add_subdirectory(mysqllite)
-  endif()
   if(TOOLS)
     add_subdirectory(bzip2)
   endif()
-  add_subdirectory(zlib)
 endif()
 
+add_subdirectory(zlib)
 add_subdirectory(g3dlite)
 add_subdirectory(recastnavigation)
 
