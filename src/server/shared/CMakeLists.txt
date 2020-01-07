@@ -21,8 +21,19 @@ file(GLOB_RECURSE sources_Logging Logging/*.cpp Logging/*.h)
 file(GLOB_RECURSE sources_Packets Packets/*.cpp Packets/*.h)
 file(GLOB_RECURSE sources_Threading Threading/*.cpp Threading/*.h)
 file(GLOB_RECURSE sources_Utilities Utilities/*.cpp Utilities/*.h)
-
 file(GLOB sources_localdir *.cpp *.h)
+
+source_group(CMake FILES CMakeLists.txt)
+source_group(Configuration FILES ${sources_Configuration})
+source_group(Cryptography FILES ${sources_Cryptography})
+source_group(Database FILES ${sources_Database})
+source_group(DataStores FILES ${sources_DataStores})
+source_group(Dynamic FILES ${sources_Dynamic})
+source_group(Logging FILES ${sources_Logging})
+source_group(Packets FILES ${sources_Packets})
+source_group(Threading FILES ${sources_Threading})
+source_group(Utilities FILES ${sources_Utilities})
+source_group(localdir FILES ${sources_localdir})
 
 # Manually set sources for Debugging directory as we don't want to include WheatyExceptionReport in shared project
 # It needs to be included both in authserver and worldserver for the static global variable to be properly initialized
