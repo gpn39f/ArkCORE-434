@@ -289,7 +289,7 @@ public:
                     if (Player* player = ObjectAccessor::GetPlayer(*me, m_activePlayerForWelcome))
                     {
                         me->SetFlag(UNIT_NPC_FLAGS, UNIT_NPC_FLAG_GOSSIP | UNIT_NPC_FLAG_QUESTGIVER);
-                        if (player->GetQuestStatus(QUEST_DONT_GO_INTO_THE_LIGHT) == QUEST_STATE_NONE)
+                        if (player->GetQuestStatus(QUEST_DONT_GO_INTO_THE_LIGHT) == QUEST_STATUS_NONE)
                             if (Quest const* quest = sObjectMgr->GetQuestTemplate(QUEST_DONT_GO_INTO_THE_LIGHT))
                                 player->AddQuestAndCheckCompletion(quest, me);
                     }

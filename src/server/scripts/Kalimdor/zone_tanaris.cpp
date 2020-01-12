@@ -676,7 +676,7 @@ public:
         uint64 samirs_camelGUID;
         uint64 macks_camelGUID;
         uint64 adarrahs_camelGUID;
-        uint64 sandPugmy[5];
+        uint64 sandPugmy[6];
         uint32 sandPugmyCount;
         bool   isVideo2;
 

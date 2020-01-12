@@ -116,7 +116,7 @@ public:
         uint32 entry = atoul(cId);
 
         if (!entry)
-            if (cId = "all")
+            if (cId == "all")
             {
                 // first remove all active quest slot..
                 for (uint8 slot = 0; slot < MAX_QUEST_LOG_SIZE; ++slot)
