@@ -1,3 +1,0 @@
-
-ALTER TABLE `gossip_menu`
-MODIFY COLUMN `entry`  mediumint(8) UNSIGNED NOT NULL DEFAULT 0 FIRST ;
