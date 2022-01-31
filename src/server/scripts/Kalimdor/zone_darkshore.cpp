@@ -389,5 +389,5 @@ void AddSC_darkshore()
     new npc_volcor_33094();
     new npc_shaldyn_33095();
     new npc_lordanel_sentinel_32969();
-	new npc_decomposing_thistle_bear_32975();
+    new npc_decomposing_thistle_bear_32975();
 }
