@@ -368,16 +368,16 @@ public:
     enum eQuest
     {
         QUEST_NO_ACCOUNTING_FOR_TASTE = 13527,
-		ITEM_FOUL_BEAR_CARCASS_SAMPLE = 44911
+        ITEM_FOUL_BEAR_CARCASS_SAMPLE = 44911
     };
 
     bool OnGossipHello(Player* player, Creature* creature) override
     {
         if (player->GetQuestStatus(QUEST_NO_ACCOUNTING_FOR_TASTE) == QUEST_STATUS_INCOMPLETE)
-		{
-			player->AddItem(ITEM_FOUL_BEAR_CARCASS_SAMPLE,1);
-			return true;
-		}
+        {
+            player->AddItem(ITEM_FOUL_BEAR_CARCASS_SAMPLE,1);
+            return true;
+        }
         return true; // We never show a gossip menu here
     }
 };
