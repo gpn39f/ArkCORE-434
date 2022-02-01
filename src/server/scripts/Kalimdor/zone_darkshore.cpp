@@ -359,6 +359,29 @@ public:
     }
 };
 
+// 32975 Decomposing Thistle Bear
+class npc_decomposing_thistle_bear_32975 : public CreatureScript
+{
+public:
+    npc_decomposing_thistle_bear_32975() : CreatureScript("npc_decomposing_thistle_bear_32975") { }
+
+    enum eQuest
+    {
+        QUEST_NO_ACCOUNTING_FOR_TASTE = 13527,
+        ITEM_FOUL_BEAR_CARCASS_SAMPLE = 44911
+    };
+
+    bool OnGossipHello(Player* player, Creature* creature) override
+    {
+        if (player->GetQuestStatus(QUEST_NO_ACCOUNTING_FOR_TASTE) == QUEST_STATUS_INCOMPLETE)
+        {
+            player->AddItem(ITEM_FOUL_BEAR_CARCASS_SAMPLE,1);
+            return true;
+        }
+        return true; // We never show a gossip menu here
+    }
+};
+
 void AddSC_darkshore()
 {
     new npc_gershala_nightwhisper_32911();
@@ -366,4 +389,5 @@ void AddSC_darkshore()
     new npc_volcor_33094();
     new npc_shaldyn_33095();
     new npc_lordanel_sentinel_32969();
+    new npc_decomposing_thistle_bear_32975();
 }
